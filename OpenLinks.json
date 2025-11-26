@@ -1,0 +1,29 @@
+{
+	"title": "KadzyLy",
+	"description": "Portfolio · Games on itch.io · Open-source code on GitHub",
+	"url_base": "https://kadzyly.github.io/portfolio-dev",
+	"profile":
+		{
+			"name": "KadzyLy",
+			"avatar": "avatar/Avatar.webp",
+			"description":"Game developer"
+		}
+	,
+	"links": [
+		{
+			"name": "itch.io",
+			"url": "https://kadzy.itch.io",
+			"icon": "/icons/Itch.svg"
+		},
+		{
+			"name": "GitHub",
+			"url": "https://github.com/kadzyly",
+			"icon": "/icons/GitHub.svg"
+		},
+		{
+			"name": "Portfolio",
+			"url": "https://kadzyly.github.io/portfolio-dev",
+			"icon": "/icons/Web.svg"
+		}
+	]
+}

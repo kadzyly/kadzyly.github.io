@@ -1,12 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import data from "../../OpenLinks.json";
+import Avatar from "../../src/components/header.astro";
+import Link from "../../src/components/link.astro";
+import { getTheme } from "../../src/lib/getTheme.ts";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const { links, profile, title, description, url_base } = data;
+const themeStyles = getTheme();
 ---
 
-<Layout>
-  <h1>En lang</h1>
-	<Welcome />
+<Layout themeClass={themeStyles} meta={{ title, description, url_base }}>
+	<Avatar slot="header" profile={profile} avatarClass={themeStyles.avatar} />
+	<ul class="list-none space-y-4">
+		{
+			links.map((link) => (
+				<Link
+					link={link}
+					buttonClass={themeStyles.links_button}
+					textClass={themeStyles.links_text}
+				/>
+			))
+		}
+	</ul>
 </Layout>
