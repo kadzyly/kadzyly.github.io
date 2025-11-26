@@ -4,6 +4,9 @@
 npm create astro@latest -- --template basics
 ```
 
+<img width="609" height="742" alt="vivaldi_HTbA1zgic2" src="https://github.com/user-attachments/assets/b8855eb5-69a5-48f1-a056-b0d1882e9ade" />
+
+
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
